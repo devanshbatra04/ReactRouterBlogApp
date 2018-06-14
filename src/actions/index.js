@@ -9,7 +9,7 @@ export function fetchPosts(){
     const request = axios.get(`${rootUrl}/posts${API_KEY}`);
 
     return{
-        type: FETCH_POSTS
+        type: FETCH_POSTS,
         payload: request
     };
 }
