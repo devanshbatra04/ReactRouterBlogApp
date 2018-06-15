@@ -9,6 +9,9 @@ class PostsNew extends Component {
                 <input className="form-control"
                     {...field.input}
                 />
+                {
+                    field.meta.error
+                }
             </div>
         )
     }
